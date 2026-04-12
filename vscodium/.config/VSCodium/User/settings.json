@@ -1,0 +1,50 @@
+{
+  "editor.cursorBlinking": "expand",
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "workbench.editor.showTabs": "single",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontLigatures": false,
+  "workbench.startupEditor": "none",
+  "editor.rulers": [80],
+  "[python]": {
+    "editor.tabSize": 4,
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[c]": {
+    "editor.tabSize": 4,
+  },
+  "[cpp]": {
+    "editor.tabSize": 4,
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "chat.disableAIFeatures": true,
+  "explorer.confirmDragAndDrop": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "clangd.path": "/home/mint/.config/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/22.1.0/clangd_22.1.0/bin/clangd",
+  "chat.agent.thinking.terminalTools": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
+}

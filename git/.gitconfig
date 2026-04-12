@@ -1,0 +1,29 @@
+[user]
+	email = 147381654+RicJDev@users.noreply.github.com
+	name = Ricardo Marín
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[core]
+	editor = nvim
+
+[init]
+	defaultbranch = main
+
+[alias]
+	graph = log --all --graph --decorate --oneline
+	st = status
+	ll = log --oneline
+	last = log -1 HEAD --stat
+	alias = config --get-regexp ^alias\\.
+	branches = branch --format='%(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+	sw = switch
+	br = branch
+	lg = log --oneline --graph --decorate
+
+[pull]
+  ff = only

@@ -1,0 +1,17 @@
+aaron-bond.better-comments
+adpyke.codesnap
+bmewburn.vscode-intelephense-client
+charliermarsh.ruff
+christian-kohler.path-intellisense
+detachhead.basedpyright
+esbenp.prettier-vscode
+james-yu.latex-workshop
+kisstkondoros.vscode-gutter-preview
+llvm-vs-code-extensions.vscode-clangd
+ms-python.debugpy
+ms-python.python
+ms-python.vscode-python-envs
+pkief.material-icon-theme
+usernamehw.errorlens
+yoavbls.pretty-ts-errors
+zhuangtongfa.material-theme

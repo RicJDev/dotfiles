@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+EXT_FILE="$HOME/.dotfiles/vscodium/extensions.txt"
+
+codium --list-extensions > "$EXT_FILE"
+
+echo "Extensions saved to $EXT_FILE"

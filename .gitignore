@@ -1,0 +1,7 @@
+# Ignorar archivos sensibles
+.ssh/
+.bash_history
+.zsh_history
+secrets/
+*token*
+*.key

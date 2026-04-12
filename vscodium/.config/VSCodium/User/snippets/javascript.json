@@ -1,0 +1,8 @@
+{
+	"Readline": {
+		"prefix": "rline",
+		"body": [
+			"import * as readline from 'readline'\nconst rl = readline.createInterface({\n\tinput: process.stdin,\n\toutput: process.stdout,\n})$0"
+		]
+	}
+}
