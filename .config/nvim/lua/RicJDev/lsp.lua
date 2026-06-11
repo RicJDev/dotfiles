@@ -1,5 +1,4 @@
 local servers = {
-  "powershell_es",
   "jsonls",
   "lua_ls",
   "basedpyright",

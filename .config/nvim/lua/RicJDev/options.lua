@@ -1,13 +1,7 @@
-vim.cmd [[
-  set nowrap
-  set guicursor=n-v-c-i:block
-  set linebreak
-  colorscheme onedark
-]]
-
-vim.api.nvim_create_user_command("BufOnly", function()
-  vim.cmd "%bd|e#|bd#"
-end, {})
+vim.wo.wrap = false
+vim.o.guicursor = "n-v-c-i:block"
+vim.o.linebreak = true
+vim.cmd.colorscheme("onedark")
 
 -------------------------------------- options ------------------------------------------
 vim.o.laststatus = 3
@@ -59,34 +53,5 @@ vim.g.loaded_python3_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.g.loaded_ruby_provider = 0
 
--- add binaries installed by mason.nvim to path
-local is_windows = vim.fn.has "win32" ~= 0
-local sep = is_windows and "\\" or "/"
-local delim = is_windows and ";" or ":"
-vim.env.PATH = table.concat({ vim.fn.stdpath "data", "mason", "bin" }, sep) .. delim .. vim.env.PATH
-
--- Archivos .gabo
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-  pattern = "*.gabo",
-  callback = function(args)
-    vim.bo[args.buf].filetype = "gabo"
-  end,
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "*.gabo",
-  callback = function(args)
-    local bufnr = args.buf
-    vim.bo[bufnr].shiftwidth = 2
-    vim.bo[bufnr].tabstop = 2
-    vim.bo[bufnr].softtabstop = 2
-    vim.bo[bufnr].expandtab = true
-    vim.bo[bufnr].commentstring = "// %s"
-
-    vim.cmd "set syntax gabo"
-  end,
-})
-
 -- Ehm... other stuff
-vim.opt.signcolumn = "yes"
 vim.opt.swapfile = false
