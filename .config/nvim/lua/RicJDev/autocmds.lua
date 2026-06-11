@@ -14,6 +14,6 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.bo[bufnr].softtabstop = 2
     vim.bo[bufnr].expandtab = true
     vim.bo[bufnr].commentstring = "// %s"
-    vim.cmd "set syntax gabo"
+    vim.cmd "set syntax=gabo"
   end,
 })
