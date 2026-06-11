@@ -1,14 +1,10 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  lazy = false,
+  event = { "BufReadPost", "BufNewFile" },
   build = ":TSUpdate",
-
-  config = function()
-    require('nvim-treesitter').setup {
-      install_dir = vim.fn.stdpath('data') .. '/site',
-    }
-  end,
-
+  opts = {
+    install_dir = vim.fn.stdpath('data') .. '/site',
+  },
   init = function()
     vim.api.nvim_create_autocmd('FileType', {
       callback = function()
@@ -16,5 +12,5 @@ return {
         vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
       end,
     })
-  end
+  end,
 }
