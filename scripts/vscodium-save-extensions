@@ -2,7 +2,7 @@
 
 set -e
 
-EXT_FILE="$HOME/.dotfiles/vscodium/extensions.txt"
+EXT_FILE="$HOME/vscode-extensions.txt"
 
 codium --list-extensions > "$EXT_FILE"
 

@@ -2,7 +2,7 @@
 
 set -e
 
-EXT_FILE="${1:-$HOME/.dotfiles/vscodium/extensions.txt}"
+EXT_FILE="${1:-$HOME/vscode-extensions.txt}"
 
 if [[ ! -f "$EXT_FILE" ]]; then
     echo "File not found: $EXT_FILE"
